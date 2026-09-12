@@ -230,3 +230,82 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #111;
 }
+
+.user-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 920px;
+  width: 100%;
+  padding: 16px;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 32px;
+}
+
+.user-panel__main {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.user-panel__image {
+  border-radius: 16px;
+}
+
+.user-panel__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.user-panel__name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+.user-panel__role {
+  font-weight: 400;
+  font-size: 14px;
+  color: #a1a1aa;
+}
+
+.user-panel__extra {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.user-panel__status {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #a2f916;
+
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: currentColor;
+    border-radius: 100px;
+  }
+}
+
+.user-panel__button {
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  background-color: #27272a;
+  border: none;
+  border-radius: 16px;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: #27272a;
+    background-color: #a2f916;
+  }
+}
